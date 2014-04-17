@@ -1,4 +1,4 @@
-(function($, ko) {
+define(["knockout", "jQuery"], function (ko, $) {
   'use strict';
   // TODO: Hook into image load event before loading others...
   function KoLazyLoad() {
@@ -63,4 +63,4 @@
   
   ko.bindingHandlers.lazyload = new KoLazyLoad();
   
-})(jQuery, ko);
+});
